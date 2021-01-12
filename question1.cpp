@@ -11,13 +11,13 @@ std::ofstream my_file("my_file.txt"),my_file_2("my_file_2.txt");
 char buffer[200000],buffer2[200000];
 my_file.rdbuf()->pubsetbuf(buffer,200000); 
 my_file_2.rdbuf()->pubsetbuf(buffer2,200000);
-spawn_a_lot_of_threads()
+spawn_a_lot_of_threads();
 
 
 //after threads finish
 while(number_of_threads>0)
     sleep();
-return 0; //to ensure file destructor and closure
+return 0; //to ensure filestream destruction and file closure
 
 
 
