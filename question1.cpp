@@ -1,3 +1,7 @@
+/*
+Compiled with gcc 10.2.0 on windows
+*/
+
 //thread function
 my_mutex.lock();
 std::cout<<"Iteration number:"<<iteration_number; //just to check if it is getting here the number of times it is supposed to
